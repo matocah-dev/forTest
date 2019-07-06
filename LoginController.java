@@ -19,6 +19,12 @@ public class LoginController {
 		return "featureA";
 
 	}
+	@RequestMapping(value = "/register", method = RequestMethod.GET)
+	public String register(@ModelAttribute CustomerDataForm) {
+
+		return "featureC";
+
+	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String handleUserLogin(ModelMap model, @RequestParam String name,
